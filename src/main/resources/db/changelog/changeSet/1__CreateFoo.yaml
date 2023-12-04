@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: users-create-table
+      author: czechprz
+      changes:
+        - createTable:
+            tableName: foos
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  constraints:
+                    -primaryKey: true,
+                    -nullable:
+              - column:
+                  name: name
+                  type: VARCHAR(50)
+              - column:
+                  name: age
+                  type: INT

@@ -1,0 +1,4 @@
+databaseChangeLog:
+  - include:
+      file: changeSet/1__CreateFoo.yaml
+      relativeToChangelogFile: true
