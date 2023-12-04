@@ -1,4 +1,4 @@
 databaseChangeLog:
   - include:
-      file: changeSet/1__CreateFoo.yaml
+      file: changeSet/1__CreateUsersTable.yaml
       relativeToChangelogFile: true

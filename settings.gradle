@@ -1,1 +1,2 @@
 rootProject.name = 'backend-template'
+include "core", "authentication"

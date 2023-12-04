@@ -4,17 +4,21 @@ databaseChangeLog:
       author: czechprz
       changes:
         - createTable:
-            tableName: foos
+            tableName: users
             columns:
               - column:
                   name: id
                   type: BIGINT
+                  autoIncrement: true
                   constraints:
                     -primaryKey: true,
                     -nullable:
               - column:
-                  name: name
+                  name: login
                   type: VARCHAR(50)
               - column:
-                  name: age
-                  type: INT
+                  name: email
+                  type: VARCHAR(50)
+              - column:
+                  name: role
+                  type: VARCHAR(50)
