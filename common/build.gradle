@@ -1,19 +1,8 @@
 plugins {
-    id "java-library"
+    id 'java-library'
     alias(libs.plugins.spring.boot)
     alias(libs.plugins.spring.boot.dependency)
     id "spring-boot.library.conventions"
-}
-
-repositories {
-    mavenCentral()
-}
-
-dependencies {
-    implementation(project(":common"))
-}
-tasks.named('test') {
-    useJUnitPlatform()
 }
 
 bootJar {
